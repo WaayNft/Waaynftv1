@@ -508,8 +508,9 @@ h3.l-line3:after {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Adjust object-fit property */
+    object-fit: cover;
     z-index: -1;
+    border-radius: 0; /* Set border radius to 0 to remove rounded borders */
 }
 
 .le-container {
