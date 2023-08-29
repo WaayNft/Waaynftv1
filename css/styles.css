@@ -21,17 +21,24 @@ body {
         color: white;
         padding: 10px 25px;
         text-decoration: none;
+        z-index: 2;
         
-        /* Estilo para mantener el botón estático */
+        /* Keep the button fixed at the bottom of the viewport on larger screens */
         position: sticky;
-        bottom: 20px; /* Puedes ajustar esta posición según tus necesidades */
-        right: 20px; /* Puedes ajustar esta posición según tus necesidades */
+        bottom: 20px;
+        right: 20px;
+        z-index: 2; /* Increase the z-index value to ensure the button is on top of other content */
     }
     
-    @media screen and (max-width: 768px) {
+    /* Adjust for smaller screens */
+    @media screen and (max-width: 480px) {
         .le-cta {
-            position: static; /* Change position to static on mobile */
-            margin-top: 20px; /* Add margin to separate button from content */
+            font-size: 16px; /* Adjust font size for smaller screens */
+            /* Keep the button fixed at the bottom of the viewport on smaller screens */
+            position: sticky;
+            bottom: 20px;
+            right: 20px;
+            z-index: 2; /* Increase the z-index value to ensure the button is on top of other content */
         }
     }
     
@@ -506,7 +513,7 @@ h3.l-line3:after {
 .third-section {
     position: relative;
     overflow: hidden;
-    height: 130vh;
+    height: 150vh;
 }
 
 .background-video2 {
