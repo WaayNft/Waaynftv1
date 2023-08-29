@@ -569,6 +569,19 @@ h3.l-line3:after {
     display: inline-block;
     margin-bottom:40px;
 }
+
+@media screen and (max-width: 768px) {
+    .one-team {
+        width: 50%; /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .one-team {
+        width: 100%; /* Adjust width for even smaller screens */
+    }
+}
+
 .le-team {
     text-align: center;
 }
