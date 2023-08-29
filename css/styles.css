@@ -28,6 +28,13 @@ body {
         right: 20px; /* Puedes ajustar esta posición según tus necesidades */
     }
     
+    @media screen and (max-width: 768px) {
+        .le-cta {
+            position: static; /* Change position to static on mobile */
+            margin-top: 20px; /* Add margin to separate button from content */
+        }
+    }
+    
 
 /* hamburger */
 
