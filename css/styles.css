@@ -24,7 +24,7 @@ body {
         z-index: 2;
         
         /* Keep the button fixed at the bottom of the viewport on larger screens */
-        position: sticky;
+        position: static;
         bottom: 20px;
         right: 20px;
         z-index: 2; /* Increase the z-index value to ensure the button is on top of other content */
@@ -91,7 +91,7 @@ body {
     display: none;
     position: fixed;
     top: 25%;
-    left: 15%;
+    left: 20%;
     transform: translateY(-50%);
     background: transparent;
     padding: 10px;
@@ -526,6 +526,7 @@ h3.l-line3:after {
     z-index: -1;
     border-radius: 0; /* Set border radius to 0 to remove rounded borders */
 }
+
 
 .le-container {
     position: relative;
